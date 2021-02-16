@@ -22,12 +22,8 @@ class Institute{
     public HashSet<Faculty> getFaculties() {
         return faculties;
     }
-
-    public void setFaculties(HashSet<Faculty> faculties) {
-        this.faculties = faculties;
-    }
     
-    //Метод додавання факультету
+    //пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
     public void addFaculty(Faculty faculty) throws FacultyAlreadyInListException{
         if (faculty == null){
             throw new NullPointerException("Faculty cannot be null!");
@@ -38,7 +34,7 @@ class Institute{
         faculties.add(faculty);
     }
     
-    //Метод видалення факультету
+    //пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
     public void removeFaculty(Faculty faculty) throws NoFacultiesException{
         if (faculty == null){
             throw new NullPointerException("Null value cannot be removed");

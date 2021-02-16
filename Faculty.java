@@ -22,17 +22,13 @@ class Faculty{
     public TreeMap<String, Student> getStudents() {
         return students;
     }
-
-    public void setStudents(TreeMap<String, Student> students) {
-        this.students = students;
-    }
     
-    //Метод знаходження числа студетів на факультеті
+    //пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
     public int getNumberOfStudents(){
         return students.size();
     }
     
-    //Методи додавання студента
+    //пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
     public void addStudent(Student student) throws StudentAlreadyInListException{
         if (student == null){
             throw new NullPointerException("Null value cannot be added");
@@ -49,7 +45,7 @@ class Faculty{
         addStudent(student);   
     }
     
-    //Метод видалення студента
+    //пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
     public void removeStudent(String fullName) throws NoStudentsException{
         if (students.isEmpty()){
             throw new NoStudentsException("List of students of faculty: " + name + " is empty");
