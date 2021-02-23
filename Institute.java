@@ -23,7 +23,7 @@ class Institute{
         return faculties;
     }
     
-    //����� ��������� ����������
+    //Метод додавання факультету
     public void addFaculty(Faculty faculty) throws FacultyAlreadyInListException{
         if (faculty == null){
             throw new NullPointerException("Faculty cannot be null!");
@@ -34,7 +34,7 @@ class Institute{
         faculties.add(faculty);
     }
     
-    //����� ��������� ����������
+    //Метод видалення факультету
     public void removeFaculty(Faculty faculty) throws NoFacultiesException{
         if (faculty == null){
             throw new NullPointerException("Null value cannot be removed");

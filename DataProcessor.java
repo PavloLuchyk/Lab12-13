@@ -12,7 +12,7 @@ public class DataProcessor {
 			institute = new Institute(name);
 		}
 	    
-	   //Метод знаходження загального числа студентів
+	   //РњРµС‚РѕРґ Р·РЅР°С…РѕРґР¶РµРЅРЅСЏ Р·Р°РіР°Р»СЊРЅРѕРіРѕ С‡РёСЃР»Р° СЃС‚СѓРґРµРЅС‚С–РІ
 	   public int getTotalNumberOfStudents() throws NoFacultiesException{
 		   HashSet<Faculty> faculties = institute.getFaculties();
 	       if (faculties.isEmpty()){
@@ -25,7 +25,7 @@ public class DataProcessor {
 	       return number;
 	   }
 	   
-	   //Метод знаходження факультету з найбільшим числом студентів
+	   //РњРµС‚РѕРґ Р·РЅР°С…РѕРґР¶РµРЅРЅСЏ С„Р°РєСѓР»СЊС‚РµС‚Сѓ Р· РЅР°Р№Р±С–Р»СЊС€РёРј С‡РёСЃР»РѕРј СЃС‚СѓРґРµРЅС‚С–РІ
 	   public Faculty getbiggestFaculty() throws NoFacultiesException{
 		   HashSet<Faculty> faculties = institute.getFaculties();
 	       if (faculties.isEmpty()){
@@ -42,7 +42,7 @@ public class DataProcessor {
 	       return max;
 	   }
 	   
-	   //Метод знаходження студентів з найвищими балами
+	   //РњРµС‚РѕРґ Р·РЅР°С…РѕРґР¶РµРЅРЅСЏ СЃС‚СѓРґРµРЅС‚С–РІ Р· РЅР°Р№РІРёС‰РёРјРё Р±Р°Р»Р°РјРё
 	   public TreeMap<String, Student> getStudentWithHighestMarks() throws NoFacultiesException{
 		   HashSet<Faculty> faculties = institute.getFaculties();
 	       if (faculties.isEmpty()){
@@ -72,7 +72,7 @@ public class DataProcessor {
 	   }
 	    
 	   
-	   //Метод тестового заповнення
+	   //РњРµС‚РѕРґ С‚РµСЃС‚РѕРІРѕРіРѕ Р·Р°РїРѕРІРЅРµРЅРЅСЏ
 	   public void testFill(){
 		   try {
 			   Faculty fict = new Faculty("FICT");

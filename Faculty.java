@@ -23,12 +23,12 @@ class Faculty{
         return students;
     }
     
-    //����� ����������� ����� ������� �� ���������
+    //Метод знаходження числа студетів на факультеті
     public int getNumberOfStudents(){
         return students.size();
     }
     
-    //������ ��������� ��������
+    //Методи додавання студента
     public void addStudent(Student student) throws StudentAlreadyInListException{
         if (student == null){
             throw new NullPointerException("Null value cannot be added");
@@ -45,7 +45,7 @@ class Faculty{
         addStudent(student);   
     }
     
-    //����� ��������� ��������
+    //Метод видалення студента
     public void removeStudent(String fullName) throws NoStudentsException{
         if (students.isEmpty()){
             throw new NoStudentsException("List of students of faculty: " + name + " is empty");
