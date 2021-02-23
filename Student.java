@@ -45,9 +45,7 @@ class Student implements Comparable<Student>{
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		long temp;
-		temp = Double.doubleToLongBits(averageMark);
-		result = prime * result + (int) (temp ^ (temp >>> 32));
+		result = prime * result + Objects.hashCode(gradebookId);
 		result = prime * result + ((firstName == null) ? 0 : firstName.hashCode());
 		result = prime * result + ((gradebookId == null) ? 0 : gradebookId.hashCode());
 		result = prime * result + ((lastName == null) ? 0 : lastName.hashCode());
