@@ -30,10 +30,6 @@ class Student implements Comparable<Student>{
     public double getAverageMark() {
         return averageMark;
     }
-    
-    public void setAverageMark(double averageMark) {
-    	this.averageMark = averageMark;
-    }
 
     @Override
     public String toString() {
